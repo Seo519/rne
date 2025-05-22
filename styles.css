@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(135deg, #aa4b6b, #6b6b83, #3b8d99);
+    background-size: 200% 200%; /* 애니메이션 효과를 위한 크기 설정 */
+    animation: gradient-animation 5s ease infinite; /* 그라데이션 애니메이션 추가 */
+}
+
+/* 그라데이션 애니메이션 */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+section h1{
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 3em;
+}
