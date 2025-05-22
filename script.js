@@ -12,7 +12,7 @@ function scrollToSection(index) {
 }
 
 window.addEventListener("wheel", (event) => {
-    if (event.deltaY > 0) {
+    if (event.deltaY > 50) {
         // 아래로 스크롤: 다음 섹션으로 이동
         scrollToSection(currentSection + 1);
     } else {
