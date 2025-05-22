@@ -15,7 +15,7 @@ window.addEventListener("wheel", (event) => {
     if (event.deltaY > 50) {
         // 아래로 스크롤: 다음 섹션으로 이동
         scrollToSection(currentSection + 1);
-    } if (events.deltaY < 50) {
+    } else{
         // 위로 스크롤: 이전 섹션으로 이동
         scrollToSection(currentSection - 1);
     }
