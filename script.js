@@ -16,7 +16,7 @@ function showSection(index) {
 showSection(0);
 
 window.addEventListener("wheel", (event) => {
-    if (event.deltaY > 0) {
+    if (event.deltaY > 150) {
         // 아래로 스크롤: 다음 섹션으로 이동
         showSection(currentSection + 1);
     } else {
