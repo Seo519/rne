@@ -2,15 +2,7 @@
 let currentSection = 0;
 const sections = document.querySelectorAll("section");
 
-function showSection(index) {
-    if (index >= 0 && index < sections.length) {
-        // 현재 활성화된 섹션 비활성화
-        sections[currentSection].classList.remove("active");
-        // 새로운 섹션 활성화
-        sections[index].classList.add("active");
-        currentSection = index;
-    }
-}
+
 
 // 초기 상태 설정: 첫 번째 섹션 활성화
 showSection(0);
