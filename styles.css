@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+body, html {
+    overflow: hidden; /* 기본 스크롤 비활성화 */
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     height: 100vh;
     display: flex;
@@ -18,9 +28,12 @@ section {
     left: 0;
     width: 100%;
     transform: translateY(100vh); /* 초기 상태: 화면 아래에 숨겨짐 */
-
+    transition: none; /* 부드러운 전환 효과 제거 */
 }
 
+section.active {
+    transform: translateY(0); /* 활성화된 섹션은 화면에 표시 */
+}
 
 /* 각 섹션의 배경 그라데이션 */
 #section1 {
